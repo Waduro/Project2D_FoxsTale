@@ -51,9 +51,7 @@ public class AudioManager : MonoBehaviour
 
     public void StopBossMusic() 
     {
-        backgroundMusic.Play();
-
-        victoryBoss.Play();
+       victoryBoss.Play();
 
         bossMusic.Stop();
     }

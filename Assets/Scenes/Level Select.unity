@@ -2677,6 +2677,14 @@ PrefabInstance:
       value: Level 3, your first challenge
       objectReference: {fileID: 0}
     - target: {fileID: 8749033695302435962, guid: 3bde65a9faea539498c014257d420631, type: 3}
+      propertyPath: totalGems
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749033695302435962, guid: 3bde65a9faea539498c014257d420631, type: 3}
+      propertyPath: targetTime
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749033695302435962, guid: 3bde65a9faea539498c014257d420631, type: 3}
       propertyPath: levelToLoad
       value: Level 3
       objectReference: {fileID: 0}
@@ -2968,6 +2976,14 @@ PrefabInstance:
     - target: {fileID: 8749033695302435962, guid: 3bde65a9faea539498c014257d420631, type: 3}
       propertyPath: levelName
       value: Level 4, a hard level for noobies
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749033695302435962, guid: 3bde65a9faea539498c014257d420631, type: 3}
+      propertyPath: totalGems
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749033695302435962, guid: 3bde65a9faea539498c014257d420631, type: 3}
+      propertyPath: targetTime
+      value: 185
       objectReference: {fileID: 0}
     - target: {fileID: 8749033695302435962, guid: 3bde65a9faea539498c014257d420631, type: 3}
       propertyPath: levelToLoad
@@ -3496,6 +3512,14 @@ PrefabInstance:
     - target: {fileID: 8749033695302435962, guid: 3bde65a9faea539498c014257d420631, type: 3}
       propertyPath: levelName
       value: Level 5, ready for the Boss?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749033695302435962, guid: 3bde65a9faea539498c014257d420631, type: 3}
+      propertyPath: totalGems
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749033695302435962, guid: 3bde65a9faea539498c014257d420631, type: 3}
+      propertyPath: targetTime
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 8749033695302435962, guid: 3bde65a9faea539498c014257d420631, type: 3}
       propertyPath: levelToLoad

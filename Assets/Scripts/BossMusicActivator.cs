@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BossMusicActivator : MonoBehaviour
 {
+    public GameObject boss;
+
     private void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.tag == "Player")
@@ -11,6 +13,8 @@ public class BossMusicActivator : MonoBehaviour
             AudioManager.instance.PlayBossMusic();
 
             gameObject.SetActive(false);
+
+            boss.SetActive(true);
         }
     }
 }

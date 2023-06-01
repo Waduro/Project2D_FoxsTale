@@ -21,8 +21,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 3.unity
     guid: 37bfa7962fb3b1a4590966e301a7e258
   - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 48afc3525771a484299964df7afdbe90
+  - enabled: 1
     path: Assets/Scenes/Level 5.unity
     guid: c7aee4756f4f1da47a77cdc217fd5c8c
+  - enabled: 1
+    path: Assets/Scenes/Victory Level.unity
+    guid: b73e44173d94d334ba862baa12755d61
   - enabled: 1
     path: Assets/Scenes/Speedrun.unity
     guid: 0c17d03071fa8824d859d97b2542dacc

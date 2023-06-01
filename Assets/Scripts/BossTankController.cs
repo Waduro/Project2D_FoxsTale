@@ -45,7 +45,7 @@ public class BossTankController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentstates = bossStates.shooting;
+        currentstates = bossStates.moving;
     }
 
     // Update is called once per frame
@@ -63,6 +63,8 @@ public class BossTankController : MonoBehaviour
                     var newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation);
 
                     newBullet.transform.localScale = theBoss.localScale;
+
+                    AudioManager.instance.soundEffects[2].Play();
                 }
                 break;
 
@@ -87,7 +89,11 @@ public class BossTankController : MonoBehaviour
 
                             AudioManager.instance.StopBossMusic();
 
+                            BossDefeated();
+
                             currentstates = bossStates.ended;
+
+                            //AudioManager.instance.backgroundMusic.Play();
                         }
                     }
                 }
@@ -140,6 +146,7 @@ public class BossTankController : MonoBehaviour
         hurtCounter = hurtTime;
 
         animator.SetTrigger("hit");
+        AudioManager.instance.soundEffects[0].Play();
 
         BossTankMine[] mines = FindObjectsOfType<BossTankMine>();
 
@@ -173,5 +180,15 @@ public class BossTankController : MonoBehaviour
         animator.SetTrigger("stopMoving");
 
         hitBox.SetActive(true);
+    }
+
+    public void BossDefeated() {
+        StartCoroutine(BossDefeatedCo());
+    }
+
+    public IEnumerator BossDefeatedCo() {
+        yield return new WaitForSeconds(5.0f);
+
+        AudioManager.instance.backgroundMusic.Play();
     }
 }
